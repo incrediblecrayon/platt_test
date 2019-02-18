@@ -2,6 +2,7 @@
 node_modules
 /dist
 platt_assets
+example.pdf
 
 # local env files
 .env.local
