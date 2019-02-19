@@ -18,8 +18,12 @@ body {
 
 }
 
-.section-wrapper{
-    margin: 30px 20px;
+.section-container{
+    margin: 15px 20px;
+}
+
+.section-container h1{
+    text-align: center;
 }
 
 /*
@@ -146,7 +150,279 @@ header {
 /*
 * FUNCTIONALITY CIRCLES
 */
+.functionality-circle-container{
+    display: grid;
+    grid-template-columns: repeat(3,1fr);
+}
 
+.functionality-circle-wrapper{
+    text-align: center;
+}
+
+.functionality-circle-wrapper span{
+    display: block;
+    padding-top: 10px;
+    /*font-weight: bold;*/
+}
+
+.functionality-circle{
+    margin: 0 auto;
+    text-align: center;
+    background-color: white;
+    border-radius: 50%;
+    height: 80px;
+    width: 80px;
+}
+
+.functionality-circle img{
+    margin-top:30px;
+}
+
+/*
+* MARKETS
+*/
+.markets-container{
+    display: grid;
+    grid-gap:1em;
+    grid-template-columns: repeat(6,auto);
+}
+
+.markets-container a{
+    text-decoration: none;
+    color: black;
+}
+
+.markets-container a:visited{
+    color: black;
+}
+
+.markets-wrapper{
+    background-color: white;
+    text-align: center;
+    height: auto;
+    min-height: 130px;
+}
+
+.markets-wrapper img{
+    /*width: 100px;*/
+    width: 100%;
+    height: auto;
+    min-height: 80px;
+}
+
+
+.markets-wrapper p{
+    font-size: 11px;
+    padding: 10px;
+    margin: 0px;
+}
+
+/*
+* FRONT PAGE INFORMATION ELEMENTS
+* TODO - This needs a new name.  I want the elements to be on the same grid layout to control where elements show up but they are not really relevant.
+*
+*/
+.front-page-info-elements-container{
+    display: grid;
+    grid-template-columns: auto;
+    grid-template-areas:
+            "deals deals"
+            "plus-member plus-member"
+            "recent recent";
+}
+
+@media only screen and (min-width: 768px){
+    .front-page-info-elements-container{
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        grid-template-areas:
+                "plus-member plus-member"
+                "deals recent";
+    }
+}
+
+.front-page-info-element-deal-wrapper{
+    grid-area: deals;
+    max-height: 230px;
+    overflow: hidden;
+}
+
+.front-page-info-element-member-wrapper{
+    grid-area: plus-member;
+    display: grid;
+    grid-template-columns: auto;
+    justify-items: center;
+    padding: 2em 0;
+    background-color: white;
+}
+
+@media only screen and (min-width: 768px){
+    .front-page-info-element-member-wrapper{
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        max-height: 230px;
+    }
+}
+
+.front-page-info-element-member-copy{
+    text-align: center;
+}
+
+.front-page-info-element-member-copy h2{
+    margin-top: 10px;
+    margin-bottom: 0px;
+}
+
+.front-page-info-element-member-copy h3{
+    margin-top:2px;
+}
+
+.front-page-info-element-member-copy span{
+    color: green;
+}
+
+.front-page-info-element-member-copy a{
+    /*text-align: center;*/
+    /*display: block;*/
+    /*margin-top: 10px;*/
+}
+
+.front-page-info-element-recent-wrapper {
+    background-color: white;
+    padding:20px;
+    grid-area: recent;
+    display: grid;
+    grid-template-columns: repeat(3,1fr);
+    font-size: 24px;
+    text-align: right;
+    color:green;
+    max-height: 230px;
+    overflow: hidden;
+}
+
+.front-page-info-element-recent-wrapper img {
+    justify-self: center;
+}
+
+.recent-title{
+    color: #000;
+    text-align: left;
+    grid-column: 1 / 3;
+    margin-bottom: 20px;
+}
+
+.front-page-info-element-squares-container{
+    display: grid;
+    grid-gap:1em;
+    grid-template-columns: 1fr 1fr;
+}
+
+@media only screen and (min-width: 768px){
+    .front-page-info-element-squares-container {
+        grid-template-columns: repeat(4,1fr);
+        /*justify-content: space-evenly;*/
+    }
+}
+
+.front-page-info-element-square-wrapper {
+    margin: 0 auto;
+    padding: 10px;
+    background-color: white;
+    width: 100px;
+    height: 150px;
+}
+
+@media only screen and (min-width: 768px) {
+    .front-page-info-element-square-wrapper {
+        /*width:200px;*/
+    }
+}
+
+.front-page-info-element-square{
+    text-align: center;
+    font-size: 14px;
+}
+
+
+.front-page-info-element-app-container{
+background-color: black;
+}
+
+.front-page-info-element-app-image{
+    background: url("panel/app-get-banner.png") no-repeat -478px;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+    height: 150px;
+    width: auto;
+    background-color: black;
+}
+
+@media (min-width:420px) {
+    /*The background is wonky.. reset position attribute after 450px*/
+    .front-page-info-element-app-image{
+        background: url("panel/app-get-banner.png") no-repeat -300px;
+        -webkit-background-size: cover;
+        -moz-background-size: cover;
+        -o-background-size: cover;
+        background-size: cover;
+    }
+}
+
+@media (min-width:768px) {
+    .front-page-info-element-app-image{
+        background: url("panel/app-get-banner.png") no-repeat;
+        -webkit-background-size: cover;
+        -moz-background-size: cover;
+        -o-background-size: cover;
+        background-size: cover;
+    }
+}
+
+.front-page-info-element-app-copy{
+    /*height: 40px;*/
+    text-align: center;
+    padding: 10px;
+    background-color: white;
+}
+
+
+/*
+* FOOTER
+*/
+footer{
+    background-color: #666666;
+    color:white;
+    text-align: center;
+    padding: 20px;
+    /*height: 300px;*/
+}
+
+footer a{
+    color:white;
+    text-decoration: none;
+}
+
+footer a:visited{
+    color:white;
+}
+
+footer h2{
+    margin-bottom: 0px;
+}
+
+.footer-phone-time{
+    margin:0px;
+    color: #d3d3d3;
+}
+
+.footer-nav{
+    margin-top: 20px;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    justify-content: space-evenly;
+}
 
 /*
 * ICONS
@@ -172,13 +448,47 @@ header {
     border-radius: 0;
 }
 
+.button-oval-link{
+    text-decoration: none;
+    background-color: lightgray;
+    color: black;
+    padding: 18px;
+    border-radius: 30px;
+    font-size: 20px;
+}
+
+.button-oval-link span{
+    /*margin-right:2em;*/
+}
+
+.button-icon{
+    /*display: inline-block;*/
+    margin-right:1em;
+    margin-left:1em;
+}
+
 /*
 * UTILITY
 */
+.drop-shadow{
+    filter: drop-shadow(0px 1px 1px grey);
+}
+
+.img-responsive{
+    width: 100%;
+    height: auto;
+}
 
 /*Show only on screens less than 768px;*/
 @media only screen and (min-width:768px) {
     .show-phone{
+        display: none;
+    }
+
+}
+
+@media only screen and (max-width:767px) {
+    .show-tablet{
         display: none;
     }
 }
