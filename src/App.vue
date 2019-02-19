@@ -26,12 +26,7 @@
 
       <!--TODO - Implement Search.-->
       <div class="search-wrapper">
-        <form class="search-form" action="#">
-          <input type="text" placeholder="What Are You Looking For?">
-          <button class="button-unstyled">
-            <img src="ic/black/ic_search.png" alt="Search">
-          </button>
-        </form>
+        <search />
       </div>
     </header>
 
@@ -234,8 +229,6 @@
       <h2>800-25-Platt</h2>
       <span>800-257-5288</span>
       <br>
-      <br>
-      <br>
       <h2 class="footer-phone-time">4 a.m. - 12 a.m. (pst)</h2>
       <h2 class="footer-phone-time">7 Days a week</h2>
       <br>
@@ -256,11 +249,11 @@
 </template>
 
 <script>
-
+import Search from './components/Search';
 export default {
   name: 'app',
   components: {
-
+    Search
   }
 }
 </script>
