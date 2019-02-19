@@ -26,12 +26,7 @@
 
       <!--TODO - Implement Search.-->
       <div class="search-wrapper">
-        <form class="search-form" action="#">
-          <input type="text" placeholder="What Are You Looking For?">
-          <button class="button-unstyled">
-            <img src="ic/black/ic_search.png" alt="Search">
-          </button>
-        </form>
+        <search />
       </div>
     </header>
 
@@ -254,11 +249,11 @@
 </template>
 
 <script>
-
+import Search from './components/Search';
 export default {
   name: 'app',
   components: {
-
+    Search
   }
 }
 </script>
