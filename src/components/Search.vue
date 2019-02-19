@@ -44,7 +44,6 @@
       return{
         input:"",
         loading: false,
-        // showResult:false,
         response:null
       }
     },
