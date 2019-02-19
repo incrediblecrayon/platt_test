@@ -84,11 +84,35 @@
 
 
     <!--SHOW ONLY ON MOBILE-->
-    <div class="section-wrapper show-phone">
-      <div class="functionality-circle">
+    <div class="section-container functionality-circle-container show-phone">
+      <!--TODO - Make these components-->
+      <div class="functionality-circle-wrapper">
+        <div class="functionality-circle drop-shadow">
+          <img src="ic/green/ic_line_style.png" alt="Categories">
+        </div>
+        <span>Categories</span>
+      </div>
 
+      <div class="functionality-circle-wrapper">
+        <div class="functionality-circle drop-shadow">
+          <img src="ic/green/ic_search.png" alt="Search">
+        </div>
+        <span>Search</span>
+      </div>
+
+      <div class="functionality-circle-wrapper">
+        <div class="functionality-circle drop-shadow">
+          <img src="ic/green/ic_scanner.png" alt="Scan">
+        </div>
+        <span>Scan</span>
       </div>
     </div>
+
+
+    <!--SHOW ONLY ON TABLET OR LARGER-->
+
+
+
 
   </div>
 </template>
