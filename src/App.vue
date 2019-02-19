@@ -110,7 +110,55 @@
 
 
     <!--SHOW ONLY ON TABLET OR LARGER-->
+    <div class="section-container show-tablet">
+      <h1>Product Markets</h1>
 
+        <div class="markets-container">
+          <a href="#">
+            <div class="markets-wrapper drop-shadow">
+              <img src="img/datacomm.png" alt="Data Comm">
+              <p><strong>DataComm</strong></p>
+            </div>
+          </a>
+
+          <a href="#">
+            <div class="markets-wrapper drop-shadow">
+              <img src="img/hvac.png" alt="HVAC">
+              <p><strong>HVAC</strong></p>
+            </div>
+          </a>
+
+          <a href="#">
+            <div class="markets-wrapper drop-shadow">
+              <img src="img/industrial.png" alt="Industrial">
+              <p><strong>Industrial</strong></p>
+            </div>
+          </a>
+
+          <a href="#">
+            <div class="markets-wrapper drop-shadow">
+              <img src="img/lighting.png" alt="Lighting">
+              <p><strong>Lighting</strong></p>
+            </div>
+          </a>
+
+          <a href="#">
+            <div class="markets-wrapper drop-shadow">
+              <img src="img/energy.png" alt="Energy Efficiency">
+              <p><strong>Energy Efficiency</strong></p>
+            </div>
+          </a>
+
+          <a href="#">
+            <div class="markets-wrapper drop-shadow">
+              <img src="img/utility.png" alt="Utility">
+              <p><strong>Utility</strong></p>
+            </div>
+          </a>
+
+        </div> <!--Markets Container Close-->
+
+    </div>
 
 
 
