@@ -161,14 +161,17 @@
 
     <div class="front-page-info-elements-container">
       <div class="front-page-info-element-deal-wrapper section-container drop-shadow">
+        <!--<div style="background-color: green;width:100%;height: 100%;"></div>-->
         <img class="img-responsive" src="panel/deal.png" alt="Click for deals!">
       </div>
 
       <div class="front-page-info-element-member-wrapper section-container drop-shadow">
-        <img class="img-responsive" src="img/platt_plus.png" alt="Get Plat Plus!">
-        <h2>Get Started Today</h2>
-        <h3>Become a <span>Platt Plus</span> Member.</h3>
-        <a class="button-oval-link" href="#">Learn More</a>
+        <img class="" src="img/platt_plus.png" alt="Get Plat Plus!">
+        <div class="front-page-info-element-member-copy">
+          <h2>Get Started Today</h2>
+          <h3>Become a <span>Platt Plus</span> Member.</h3>
+          <a class="button-oval-link" href="#">Learn More</a>
+        </div>
       </div>
 
       <div class="front-page-info-element-recent-wrapper section-container drop-shadow">
@@ -215,7 +218,7 @@
 
     </div> <!--front-page-info-element-squares-container -->
 
-    <div class="front-page-info-element-app-container section-container">
+    <div class="front-page-info-element-app-container section-container drop-shadow">
       <div class="front-page-info-element-app-image">
 
       </div>
@@ -223,6 +226,10 @@
         <span>Shop better, download the Platt App today</span>
       </div>
     </div>
+
+    <footer>
+
+    </footer>
 
   </div>
 </template>

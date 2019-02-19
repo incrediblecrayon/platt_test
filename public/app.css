@@ -229,12 +229,22 @@ header {
             "deals deals"
             "plus-member plus-member"
             "recent recent";
-    /*grid-gap: 1em;*/
+}
+
+@media only screen and (min-width: 768px){
+    .front-page-info-elements-container{
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        grid-template-areas:
+                "plus-member plus-member"
+                "deals recent";
+    }
 }
 
 .front-page-info-element-deal-wrapper{
     grid-area: deals;
-
+    max-height: 230px;
+    overflow: hidden;
 }
 
 .front-page-info-element-member-wrapper{
@@ -246,22 +256,35 @@ header {
     background-color: white;
 }
 
-.front-page-info-element-member-wrapper h2{
+@media only screen and (min-width: 768px){
+    .front-page-info-element-member-wrapper{
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        max-height: 230px;
+    }
+}
+
+.front-page-info-element-member-copy{
+    text-align: center;
+}
+
+.front-page-info-element-member-copy h2{
     margin-top: 10px;
     margin-bottom: 0px;
 }
 
-.front-page-info-element-member-wrapper h3{
+.front-page-info-element-member-copy h3{
     margin-top:2px;
 }
 
-.front-page-info-element-member-wrapper span{
+.front-page-info-element-member-copy span{
     color: green;
 }
 
-.front-page-info-element-member-wrapper a{
-    width: 50%;
-    text-align: center;
+.front-page-info-element-member-copy a{
+    /*text-align: center;*/
+    /*display: block;*/
+    /*margin-top: 10px;*/
 }
 
 .front-page-info-element-recent-wrapper {
@@ -273,6 +296,8 @@ header {
     font-size: 24px;
     text-align: right;
     color:green;
+    max-height: 230px;
+    overflow: hidden;
 }
 
 .front-page-info-element-recent-wrapper img {
@@ -292,6 +317,12 @@ header {
     grid-template-columns: 1fr 1fr;
 }
 
+@media only screen and (min-width: 768px){
+    .front-page-info-element-squares-container {
+        grid-template-columns: repeat(4,1fr);
+    }
+}
+
 .front-page-info-element-square-wrapper {
     /*margin: 0 auto;*/
     padding: 10px;
@@ -307,7 +338,7 @@ header {
 
 
 .front-page-info-element-app-container{
-    background-color: white;
+background-color: black;
 }
 
 .front-page-info-element-app-image{
@@ -318,6 +349,7 @@ header {
     background-size: cover;
     height: 150px;
     width: auto;
+    background-color: black;
 }
 
 @media (min-width:420px) {
@@ -345,6 +377,7 @@ header {
     /*height: 40px;*/
     text-align: center;
     padding: 10px;
+    background-color: white;
 }
 
 
