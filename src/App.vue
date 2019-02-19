@@ -234,8 +234,6 @@
       <h2>800-25-Platt</h2>
       <span>800-257-5288</span>
       <br>
-      <br>
-      <br>
       <h2 class="footer-phone-time">4 a.m. - 12 a.m. (pst)</h2>
       <h2 class="footer-phone-time">7 Days a week</h2>
       <br>
