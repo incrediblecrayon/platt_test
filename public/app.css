@@ -289,18 +289,62 @@ header {
 .front-page-info-element-squares-container{
     display: grid;
     grid-gap:1em;
-    grid-template-columns: repeat(auto-fit, minmax(140px,1fr));
+    grid-template-columns: 1fr 1fr;
 }
 
 .front-page-info-element-square-wrapper {
-    /*justify-self: center;*/
+    /*margin: 0 auto;*/
+    padding: 10px;
+    background-color: white;
+    max-width: 200px;
+    height: 150px;
 }
 
 .front-page-info-element-square{
-    background-color: blueviolet;
-    /*min-height: 200px;*/
-    /*min-width: 140px;*/
-    /*max-width: 200px;*/
+    text-align: center;
+    font-size: 14px;
+}
+
+
+.front-page-info-element-app-container{
+    background-color: white;
+}
+
+.front-page-info-element-app-image{
+    background: url("panel/app-get-banner.png") no-repeat -478px;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+    height: 150px;
+    width: auto;
+}
+
+@media (min-width:420px) {
+    /*The background is wonky.. reset position attribute after 450px*/
+    .front-page-info-element-app-image{
+        background: url("panel/app-get-banner.png") no-repeat -300px;
+        -webkit-background-size: cover;
+        -moz-background-size: cover;
+        -o-background-size: cover;
+        background-size: cover;
+    }
+}
+
+@media (min-width:768px) {
+    .front-page-info-element-app-image{
+        background: url("panel/app-get-banner.png") no-repeat;
+        -webkit-background-size: cover;
+        -moz-background-size: cover;
+        -o-background-size: cover;
+        background-size: cover;
+    }
+}
+
+.front-page-info-element-app-copy{
+    /*height: 40px;*/
+    text-align: center;
+    padding: 10px;
 }
 
 
@@ -355,7 +399,9 @@ header {
         display: none;
     }
 
-}@media only screen and (max-width:767px) {
+}
+
+@media only screen and (max-width:767px) {
     .show-tablet{
         display: none;
     }

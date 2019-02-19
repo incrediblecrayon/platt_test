@@ -182,19 +182,47 @@
       </div>
     </div> <!--Front Page Info Elements Container-->
 
+
     <div class="front-page-info-element-squares-container section-container">
-      <div class="front-page-info-element-square-wrapper">
+
+      <div class="front-page-info-element-square-wrapper drop-shadow">
         <div class="front-page-info-element-square">
-          <img src="" alt="">
+          <img src="img/super_tool_day.png" alt="Super Tool Day">
+          <p>Super Tool Day & Dynamic Data Day</p>
         </div>
       </div>
 
-      <div class="front-page-info-element-square">test</div>
-      <div class="front-page-info-element-square">test</div>
-      <div class="front-page-info-element-square">test</div>
+      <div class="front-page-info-element-square-wrapper drop-shadow">
+        <div class="front-page-info-element-square">
+          <img src="img/ic_location_b.png" alt="Branch Locations">
+          <p>Branch Locations</p>
+        </div>
+      </div>
+
+      <div class="front-page-info-element-square-wrapper drop-shadow">
+        <div class="front-page-info-element-square">
+          <img src="img/ic_helpcenter.png" alt="Help Center">
+          <p>Help Center</p>
+        </div>
+      </div>
+
+      <div class="front-page-info-element-square-wrapper drop-shadow">
+        <div class="front-page-info-element-square">
+          <img src="img/ic_platt-u.png" alt="Platt U">
+          <p>Platt U</p>
+        </div>
+      </div>
+
+    </div> <!--front-page-info-element-squares-container -->
+
+    <div class="front-page-info-element-app-container section-container">
+      <div class="front-page-info-element-app-image">
+
+      </div>
+      <div class="front-page-info-element-app-copy">
+        <span>Shop better, download the Platt App today</span>
+      </div>
     </div>
-
-
 
   </div>
 </template>
