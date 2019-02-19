@@ -320,15 +320,22 @@ header {
 @media only screen and (min-width: 768px){
     .front-page-info-element-squares-container {
         grid-template-columns: repeat(4,1fr);
+        /*justify-content: space-evenly;*/
     }
 }
 
 .front-page-info-element-square-wrapper {
-    /*margin: 0 auto;*/
+    margin: 0 auto;
     padding: 10px;
     background-color: white;
-    max-width: 200px;
+    width: 100px;
     height: 150px;
+}
+
+@media only screen and (min-width: 768px) {
+    .front-page-info-element-square-wrapper {
+        /*width:200px;*/
+    }
 }
 
 .front-page-info-element-square{
@@ -382,6 +389,42 @@ background-color: black;
 
 
 /*
+* FOOTER
+*/
+footer{
+    background-color: #666666;
+    color:white;
+    text-align: center;
+    padding: 20px;
+    /*height: 300px;*/
+}
+
+footer a{
+    color:white;
+    text-decoration: none;
+}
+
+footer a:visited{
+    color:white;
+}
+
+footer h2{
+    margin-bottom: 0px;
+}
+
+.footer-phone-time{
+    margin:0px;
+    color: #d3d3d3;
+}
+
+.footer-nav{
+    margin-top: 20px;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    justify-content: space-evenly;
+}
+
+/*
 * ICONS
 */
 .icon {
@@ -412,6 +455,16 @@ background-color: black;
     padding: 18px;
     border-radius: 30px;
     font-size: 20px;
+}
+
+.button-oval-link span{
+    /*margin-right:2em;*/
+}
+
+.button-icon{
+    /*display: inline-block;*/
+    margin-right:1em;
+    margin-left:1em;
 }
 
 /*
