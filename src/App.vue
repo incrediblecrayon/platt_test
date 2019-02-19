@@ -157,7 +157,41 @@
           </a>
 
         </div> <!--Markets Container Close-->
+    </div> <!--Section Container Close-->
 
+    <div class="front-page-info-elements-container">
+      <div class="front-page-info-element-deal-wrapper section-container drop-shadow">
+        <img class="img-responsive" src="panel/deal.png" alt="Click for deals!">
+      </div>
+
+      <div class="front-page-info-element-member-wrapper section-container drop-shadow">
+        <img class="img-responsive" src="img/platt_plus.png" alt="Get Plat Plus!">
+        <h2>Get Started Today</h2>
+        <h3>Become a <span>Platt Plus</span> Member.</h3>
+        <a class="button-oval-link" href="#">Learn More</a>
+      </div>
+
+      <div class="front-page-info-element-recent-wrapper section-container drop-shadow">
+        <!--TODO Dynamic Vue Component-->
+        <span class="recent-title">Recently Viewed</span>
+        <span>View All</span>
+
+        <img class="img-responsive" src="recent/11.png" alt="Product ID 11">
+        <img class="img-responsive" src="recent/22.png" alt="Product ID 22">
+        <img class="img-responsive" src="recent/22.png" alt="Product ID 22">
+      </div>
+    </div> <!--Front Page Info Elements Container-->
+
+    <div class="front-page-info-element-squares-container section-container">
+      <div class="front-page-info-element-square-wrapper">
+        <div class="front-page-info-element-square">
+          <img src="" alt="">
+        </div>
+      </div>
+
+      <div class="front-page-info-element-square">test</div>
+      <div class="front-page-info-element-square">test</div>
+      <div class="front-page-info-element-square">test</div>
     </div>
 
 
