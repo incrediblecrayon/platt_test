@@ -7,7 +7,6 @@
       <div id="header-nav">
         <!--TODO - Add profile as vue component, it will need to know when to display badge.-->
         <!--TODO - Hamburger Nav Aside.-->
-
         <ul>
           <li>
             <a href="#search"><img class="icon icon-white-search" src="ic/white/ic_search.png" alt="Search"></a>
@@ -24,11 +23,12 @@
         </ul>
       </div>
 
-      <!--TODO - Implement Search.-->
       <div class="search-wrapper">
         <search />
       </div>
-    </header>
+
+    </header><!--header-->
+
 
     <div id="categories-wrapper" class="categories-wrapper">
       <!--TODO - Make category containers vue components-->
@@ -42,40 +42,40 @@
 
       <div class="categories-element">
         <img src="ic/black/ic_playlist_add_check.png" alt="My Catalog Icon">
-        <h2>My Catalog</h2>
+        <h3>My Catalog</h3>
         <img class="categories-element-arrow" src="ic/black/ic_arrow_forward.png" alt="Go to all categories">
       </div>
 
       <div class="categories-element">
         <img src="ic/black/ic_list.png" alt="My List Icon">
-        <h2>My List</h2>
+        <h3>My List</h3>
         <img class="categories-element-arrow" src="ic/black/ic_arrow_forward.png" alt="Go to all categories">
       </div>
 
       <div class="categories-element">
         <img src="ic/green/ic_chat_active.png" alt="Chat Active Icon">
-        <h2>Live Help</h2>
+        <h3>Live Help</h3>
         <img class="categories-element-arrow" src="ic/black/ic_arrow_forward.png" alt="Go to all categories">
       </div>
 
       <div class="categories-element">
         <img src="ic/black/ic_check_circle.png" alt="PIM">
-        <h2>PIM</h2>
+        <h3>PIM</h3>
         <img class="categories-element-arrow" src="ic/black/ic_arrow_forward.png" alt="Go to all categories">
       </div>
 
       <div class="categories-element">
         <img src="ic/black/ic_playlist_add_check.png" alt="Account Icon">
-        <h2>Account</h2>
+        <h3>Account</h3>
         <img class="categories-element-arrow" src="ic/black/ic_arrow_forward.png" alt="Go to all categories">
       </div>
 
       <div class="categories-element">
         <img src="ic/black/ic_place.png" alt="Branch Locations">
-        <h2>Branch Locations</h2>
+        <h3>Branch Locations</h3>
         <img class="categories-element-arrow" src="ic/black/ic_arrow_forward.png" alt="Go to all categories">
       </div>
-    </div>
+    </div> <!--categories-wrapper-->
 
 
     <!--SHOW ONLY ON MOBILE-->
@@ -101,7 +101,7 @@
         </div>
         <span>Scan</span>
       </div>
-    </div>
+    </div> <!--functionality-circle-container-->
 
 
     <!--SHOW ONLY ON TABLET OR LARGER-->
@@ -151,12 +151,12 @@
             </div>
           </a>
 
-        </div> <!--Markets Container Close-->
-    </div> <!--Section Container Close-->
+        </div> <!--markets-container-->
+    </div> <!--section-container-->
+
 
     <div class="front-page-info-elements-container">
       <div class="front-page-info-element-deal-wrapper section-container drop-shadow">
-        <!--<div style="background-color: green;width:100%;height: 100%;"></div>-->
         <img class="img-responsive" src="panel/deal.png" alt="Click for deals!">
       </div>
 
@@ -165,6 +165,9 @@
         <div class="front-page-info-element-member-copy">
           <h2>Get Started Today</h2>
           <h3>Become a <span>Platt Plus</span> Member.</h3>
+          <br>
+          <br>
+          <br>
           <a class="button-oval-link" href="#">Learn More</a>
         </div>
       </div>
@@ -178,11 +181,10 @@
         <img class="img-responsive" src="recent/22.png" alt="Product ID 22">
         <img class="img-responsive" src="recent/22.png" alt="Product ID 22">
       </div>
-    </div> <!--Front Page Info Elements Container-->
+    </div> <!--front-page-info-elements-container-->
 
 
     <div class="front-page-info-element-squares-container section-container">
-
       <div class="front-page-info-element-square-wrapper drop-shadow">
         <div class="front-page-info-element-square">
           <img class="img-responsive" src="img/super_tool_day.png" alt="Super Tool Day">
@@ -210,17 +212,16 @@
           <p>Platt U</p>
         </div>
       </div>
-
     </div> <!--front-page-info-element-squares-container -->
 
-    <div class="front-page-info-element-app-container section-container drop-shadow">
-      <div class="front-page-info-element-app-image">
 
-      </div>
+    <div class="front-page-info-element-app-container section-container drop-shadow">
+      <div class="front-page-info-element-app-image"></div>
       <div class="front-page-info-element-app-copy">
         <span>Shop better, download the Platt App today</span>
       </div>
-    </div>
+    </div><!--front-page-info-element-app-container-->
+
 
     <footer>
       <!--TODO - Clean this up-->
@@ -229,14 +230,18 @@
       <h2>800-25-Platt</h2>
       <span>800-257-5288</span>
       <br>
+      <br>
+      <br>
       <h2 class="footer-phone-time">4 a.m. - 12 a.m. (pst)</h2>
       <h2 class="footer-phone-time">7 Days a week</h2>
       <br>
       <br>
       <br>
       <a class="button-oval-link" href="#">
-        <img class="button-icon" src="ic/black/ic_chat.png" alt=""><span style="color: black">Learn More</span>
+        <img class="button-icon" src="ic/black/ic_chat.png" alt=""><span style="color: black">Live Help</span>
       </a>
+      <br>
+      <br>
 
       <div class="footer-nav show-tablet">
           <a href="#"><h3>Contact Us</h3></a>
