@@ -1,23 +1,24 @@
 body {
     margin: 0;
-    background-color: #e9e9e9;
 }
 
 #app {
     font-family: 'Avenir', Helvetica, Arial, sans-serif;
     -webkit-font-smoothing: antialiased;
     -moz-osx-font-smoothing: grayscale;
-    /*text-align: center;*/
-    color: #2c3e50;
-    /*margin-top: 60px;*/
-    /*margin: 0px 20px;*/
+    background-color: #e9e9e9;
 }
+
+@media only screen and (min-width: 1440px)  {
+    #app{
+        max-width: 1440px;
+        margin: 0px auto;
+    }
+}
+
 
 /*General Styles for all sections*/
-.wrapper {
-
-}
-
+/*region General*/
 .section-container{
     margin: 15px 20px;
 }
@@ -25,13 +26,15 @@ body {
 .section-container h1{
     text-align: center;
 }
+/*endregion*/
 
 /*
 * Header
 */
+/*region HEADER*/
 header {
     padding:1em;
-    background-color: green;
+    background-color: #008833;
     display: grid;
     grid-template-columns: 1fr 2fr;
     grid-template-areas:
@@ -44,13 +47,10 @@ header {
     grid-area: header-logo;
     align-self:center;
     justify-self: left;
-
-    /*background-color: black;*/
 }
 
 #header-nav {
     grid-area: header-nav;
-    /*background-color: white;*/
     align-self:center;
     justify-self: right;
 }
@@ -76,7 +76,12 @@ header {
                 "header-logo search header-nav"
     }
 }
+/*endregion*/
 
+/*
+* SEARCH
+*/
+/*region SEARCH*/
 .search-wrapper {
     grid-area: search;
 }
@@ -93,6 +98,10 @@ header {
     box-sizing : border-box;
     width: 100%;
     border:0;
+}
+
+.search-form input[type=text]:focus {
+    outline: none;
 }
 
 .search-result-container{
@@ -122,11 +131,12 @@ header {
 .search-result-wrapper p{
     text-align: center;
 }
+/*endregion*/
 
 /*
 * CATEGORIES
 */
-
+/*region CATEGORIES*/
 .categories-wrapper {
     display:grid;
     grid-gap: 0em;
@@ -135,19 +145,28 @@ header {
 }
 
 .categories-element {
-    /*margin: 0 1em;*/
-    /*margin: 1em 1em;*/
+    padding-top: .75em;
+    padding-bottom: .75em;
+    margin: 10px;
     border-bottom: 2px solid lightgray;
 }
 
-.categories-element-all {
-    /*padding: 1.5em 1em;*/
+.categories-element:last-child{
+    border-bottom: none;
 }
 
-.categories-element h2 {
+.categories-element-all {
+    margin-top: 1em;
+}
+
+.categories-element h2,h3 {
     display: inline;
     padding-left: 10px;
     margin:0;
+}
+
+.categories-element h3{
+    font-weight: normal;
 }
 
 .categories-element-arrow {
@@ -159,12 +178,18 @@ header {
 @media only screen and (min-width: 768px)  {
     .categories-wrapper {
         grid-template-columns: repeat(3,1fr);
+        grid-gap:0;
     }
     .categories-element {
-        text-align: left;
+        text-align: center;
         padding-left: 10px;
         border-left: 1px solid lightgray;
         border-right: 1px solid lightgray;
+        margin:0;
+    }
+
+    .categories-element:last-child{
+        border-bottom: 2px solid lightgray;
     }
     .categories-element-arrow {
         display: none;
@@ -174,10 +199,12 @@ header {
         grid-row: 1;
     }
 }
+/*endregion*/
 
 /*
 * FUNCTIONALITY CIRCLES
 */
+/*region FUNCTIONALITY CIRCLES*/
 .functionality-circle-container{
     display: grid;
     grid-template-columns: repeat(3,1fr);
@@ -190,7 +217,6 @@ header {
 .functionality-circle-wrapper span{
     display: block;
     padding-top: 10px;
-    /*font-weight: bold;*/
 }
 
 .functionality-circle{
@@ -205,10 +231,12 @@ header {
 .functionality-circle img{
     margin-top:30px;
 }
+/*endregion*/
 
 /*
 * MARKETS
 */
+/*region MARKETS*/
 .markets-container{
     display: grid;
     grid-gap:1em;
@@ -244,12 +272,13 @@ header {
     padding: 10px;
     margin: 0px;
 }
+/*endregion*/
 
 /*
-* FRONT PAGE INFORMATION ELEMENTS
+* FRONT PAGE INFO ELEMENTS
 * TODO - This needs a new name.  I want the elements to be on the same grid layout to control where elements show up but they are not really relevant.
-*
 */
+/*region FRONT PAGE INFO ELEMENTS*/
 .front-page-info-elements-container{
     display: grid;
     grid-template-columns: auto;
@@ -310,9 +339,6 @@ header {
 }
 
 .front-page-info-element-member-copy a{
-    /*text-align: center;*/
-    /*display: block;*/
-    /*margin-top: 10px;*/
 }
 
 .front-page-info-element-recent-wrapper {
@@ -348,7 +374,6 @@ header {
 @media only screen and (min-width: 768px){
     .front-page-info-element-squares-container {
         grid-template-columns: repeat(4,1fr);
-        /*justify-content: space-evenly;*/
     }
 }
 
@@ -362,7 +387,6 @@ header {
 
 @media only screen and (min-width: 768px) {
     .front-page-info-element-square-wrapper {
-        /*width:200px;*/
     }
 }
 
@@ -370,7 +394,6 @@ header {
     text-align: center;
     font-size: 14px;
 }
-
 
 .front-page-info-element-app-container{
 background-color: black;
@@ -414,11 +437,13 @@ background-color: black;
     padding: 10px;
     background-color: white;
 }
+/*endregion*/
 
 
 /*
 * FOOTER
 */
+/*region FOOTER*/
 footer{
     background-color: #666666;
     color:white;
@@ -451,10 +476,13 @@ footer h2{
     grid-template-columns: 1fr 1fr 1fr;
     justify-content: space-evenly;
 }
+/*endregion*/
 
 /*
 * ICONS
+* TODO - SVG Icons please.
 */
+/*region ICONS*/
 .icon {
 
 }
@@ -462,10 +490,12 @@ footer h2{
 .icon-white-search {
 
 }
+/*endregion*/
 
 /*
 * BUTTONS
 */
+/*region BUTTONS*/
 .button-unstyled {
     border:0;
     background: none;
@@ -486,18 +516,18 @@ footer h2{
 }
 
 .button-oval-link span{
-    /*margin-right:2em;*/
 }
 
 .button-icon{
-    /*display: inline-block;*/
     margin-right:1em;
     margin-left:1em;
 }
+/*endregion*/
 
 /*
 * UTILITY
 */
+/*region UTILITY*/
 .drop-shadow{
     filter: drop-shadow(0px 1px 1px grey);
 }
@@ -535,11 +565,7 @@ footer h2{
         display: none;
     }
 }
-
-/*.show-tablet {*/
-    /**/
-/*}*/
-
+/*endregion*/
 
 
 
