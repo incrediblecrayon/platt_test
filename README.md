@@ -1,7 +1,7 @@
 # platt_test
 A simple layout test based off of a provided PDF layout.  
 
-** A few items to note:** 
+**A few items to note:** 
 
 - The mockup provided was speced for tablet/mobile view.
 - Part of the requirements called for a vanilla `CSS` with no front end layout tools.
