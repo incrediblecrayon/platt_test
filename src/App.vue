@@ -157,7 +157,6 @@
 
     <div class="front-page-info-elements-container">
       <div class="front-page-info-element-deal-wrapper section-container drop-shadow">
-        <img class="img-responsive" src="panel/deal.png" alt="Click for deals!">
       </div>
 
       <div class="front-page-info-element-member-wrapper section-container drop-shadow">
