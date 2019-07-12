@@ -302,6 +302,10 @@ header {
     grid-area: deals;
     max-height: 230px;
     overflow: hidden;
+    background-image: url('panel/deal.png');
+    background-repeat:no-repeat;
+    background-size:cover;
+    background-position:center;
 }
 
 .front-page-info-element-member-wrapper{
