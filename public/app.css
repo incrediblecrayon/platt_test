@@ -300,7 +300,7 @@ header {
 
 .front-page-info-element-deal-wrapper{
     grid-area: deals;
-    max-height: 230px;
+    max-height: 270px;
     overflow: hidden;
     background-image: url('panel/deal.png');
     background-repeat:no-repeat;
