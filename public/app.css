@@ -300,9 +300,9 @@ header {
 
 .front-page-info-element-deal-wrapper{
     grid-area: deals;
-    max-height: 230px;
+    max-height: 270px;
     overflow: hidden;
-    background-image: url('panel/deal.png');
+    background-image: url('img/panel/deal.png');
     background-repeat:no-repeat;
     background-size:cover;
     background-position:center;
@@ -404,7 +404,7 @@ background-color: black;
 }
 
 .front-page-info-element-app-image{
-    background: url("panel/app-get-banner.png") no-repeat -478px;
+    background: url("img/panel/app-get-banner.png") no-repeat -478px;
     -webkit-background-size: cover;
     -moz-background-size: cover;
     -o-background-size: cover;
@@ -417,7 +417,7 @@ background-color: black;
 @media (min-width:420px) {
     /*The background is wonky.. reset position attribute after 450px*/
     .front-page-info-element-app-image{
-        background: url("panel/app-get-banner.png") no-repeat -300px;
+        background: url("img/panel/app-get-banner.png") no-repeat -300px;
         -webkit-background-size: cover;
         -moz-background-size: cover;
         -o-background-size: cover;
@@ -427,7 +427,7 @@ background-color: black;
 
 @media (min-width:768px) {
     .front-page-info-element-app-image{
-        background: url("panel/app-get-banner.png") no-repeat;
+        background: url("img/panel/app-get-banner.png") no-repeat;
         -webkit-background-size: cover;
         -moz-background-size: cover;
         -o-background-size: cover;

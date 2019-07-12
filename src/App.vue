@@ -9,16 +9,16 @@
         <!--TODO - Hamburger Nav Aside.-->
         <ul>
           <li>
-            <a href="#search"><img class="icon icon-white-search" src="ic/white/ic_search.png" alt="Search"></a>
+            <a href="#search"><img class="icon icon-white-search" src="img/ic/white/ic_search.png" alt="Search"></a>
           </li>
           <li>
-            <a href="#search"><img class="icon icon-white-shopping-cart" src="ic/white/ic_shopping_cart.png" alt="Shopping Cart"></a>
+            <a href="#search"><img class="icon icon-white-shopping-cart" src="img/ic/white/ic_shopping_cart.png" alt="Shopping Cart"></a>
           </li>
           <li>
-            <a href="#search"><img class="icon icon-white-person" src="ic/white/ic_person.png" alt="Profile"></a>
+            <a href="#search"><img class="icon icon-white-person" src="img/ic/white/ic_person.png" alt="Profile"></a>
           </li>
           <li>
-            <a href="#search"><img class="icon icon-white-menu" src="ic/white/ic_menu.png" alt="Menu"></a>
+            <a href="#search"><img class="icon icon-white-menu" src="img/ic/white/ic_menu.png" alt="Menu"></a>
           </li>
         </ul>
       </div>
@@ -35,45 +35,45 @@
       <!--TODO - Spacing and borders - Might need it to be a sub grid element to line up the right way-->
 
       <div class="categories-element categories-element-all">
-        <img src="ic/black/ic_categories.png" alt="All Categories Icon">
+        <img src="img/ic/black/ic_categories.png" alt="All Categories Icon">
         <strong><h2>Shop all categories</h2></strong>
-        <img class="categories-element-arrow" src="ic/black/ic_arrow_forward.png" alt="Go to all categories">
+        <img class="categories-element-arrow" src="img/ic/black/ic_arrow_forward.png" alt="Go to all categories">
       </div>
 
       <div class="categories-element">
-        <img src="ic/black/ic_playlist_add_check.png" alt="My Catalog Icon">
+        <img src="img/ic/black/ic_playlist_add_check.png" alt="My Catalog Icon">
         <h3>My Catalog</h3>
-        <img class="categories-element-arrow" src="ic/black/ic_arrow_forward.png" alt="Go to all categories">
+        <img class="categories-element-arrow" src="img/ic/black/ic_arrow_forward.png" alt="Go to all categories">
       </div>
 
       <div class="categories-element">
-        <img src="ic/black/ic_list.png" alt="My List Icon">
+        <img src="img/ic/black/ic_list.png" alt="My List Icon">
         <h3>My List</h3>
-        <img class="categories-element-arrow" src="ic/black/ic_arrow_forward.png" alt="Go to all categories">
+        <img class="categories-element-arrow" src="img/ic/black/ic_arrow_forward.png" alt="Go to all categories">
       </div>
 
       <div class="categories-element">
-        <img src="ic/green/ic_chat_active.png" alt="Chat Active Icon">
+        <img src="img/ic/green/ic_chat_active.png" alt="Chat Active Icon">
         <h3>Live Help</h3>
-        <img class="categories-element-arrow" src="ic/black/ic_arrow_forward.png" alt="Go to all categories">
+        <img class="categories-element-arrow" src="img/ic/black/ic_arrow_forward.png" alt="Go to all categories">
       </div>
 
       <div class="categories-element">
-        <img src="ic/black/ic_check_circle.png" alt="PIM">
+        <img src="img/ic/black/ic_check_circle.png" alt="PIM">
         <h3>PIM</h3>
-        <img class="categories-element-arrow" src="ic/black/ic_arrow_forward.png" alt="Go to all categories">
+        <img class="categories-element-arrow" src="img/ic/black/ic_arrow_forward.png" alt="Go to all categories">
       </div>
 
       <div class="categories-element">
-        <img src="ic/black/ic_playlist_add_check.png" alt="Account Icon">
+        <img src="img/ic/black/ic_playlist_add_check.png" alt="Account Icon">
         <h3>Account</h3>
-        <img class="categories-element-arrow" src="ic/black/ic_arrow_forward.png" alt="Go to all categories">
+        <img class="categories-element-arrow" src="img/ic/black/ic_arrow_forward.png" alt="Go to all categories">
       </div>
 
       <div class="categories-element">
-        <img src="ic/black/ic_place.png" alt="Branch Locations">
+        <img src="img/ic/black/ic_place.png" alt="Branch Locations">
         <h3>Branch Locations</h3>
-        <img class="categories-element-arrow" src="ic/black/ic_arrow_forward.png" alt="Go to all categories">
+        <img class="categories-element-arrow" src="img/ic/black/ic_arrow_forward.png" alt="Go to all categories">
       </div>
     </div> <!--categories-wrapper-->
 
@@ -83,21 +83,21 @@
       <!--TODO - Make these components-->
       <div class="functionality-circle-wrapper">
         <div class="functionality-circle drop-shadow">
-          <img src="ic/green/ic_line_style.png" alt="Categories">
+          <img src="img/ic/green/ic_line_style.png" alt="Categories">
         </div>
         <span>Categories</span>
       </div>
 
       <div class="functionality-circle-wrapper">
         <div class="functionality-circle drop-shadow">
-          <img src="ic/green/ic_search.png" alt="Search">
+          <img src="img/ic/green/ic_search.png" alt="Search">
         </div>
         <span>Search</span>
       </div>
 
       <div class="functionality-circle-wrapper">
         <div class="functionality-circle drop-shadow">
-          <img src="ic/green/ic_scanner.png" alt="Scan">
+          <img src="img/ic/green/ic_scanner.png" alt="Scan">
         </div>
         <span>Scan</span>
       </div>
@@ -176,9 +176,9 @@
         <span class="recent-title">Recently Viewed</span>
         <span>View All</span>
 
-        <img class="img-responsive" src="recent/11.png" alt="Product ID 11">
-        <img class="img-responsive" src="recent/22.png" alt="Product ID 22">
-        <img class="img-responsive" src="recent/22.png" alt="Product ID 22">
+        <img class="img-responsive" src="img/recent/11.png" alt="Product ID 11">
+        <img class="img-responsive" src="img/recent/22.png" alt="Product ID 22">
+        <img class="img-responsive" src="img/recent/22.png" alt="Product ID 22">
       </div>
     </div> <!--front-page-info-elements-container-->
 
@@ -237,7 +237,7 @@
       <br>
       <br>
       <a class="button-oval-link" href="#">
-        <img class="button-icon" src="ic/black/ic_chat.png" alt=""><span style="color: black">Live Help</span>
+        <img class="button-icon" src="img/ic/black/ic_chat.png" alt=""><span style="color: black">Live Help</span>
       </a>
       <br>
       <br>
