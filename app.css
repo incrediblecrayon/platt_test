@@ -1,0 +1,575 @@
+body {
+    margin: 0;
+}
+
+#app {
+    font-family: 'Avenir', Helvetica, Arial, sans-serif;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+    background-color: #e9e9e9;
+}
+
+@media only screen and (min-width: 1440px)  {
+    #app{
+        max-width: 1440px;
+        margin: 0px auto;
+    }
+}
+
+
+/*General Styles for all sections*/
+/*region General*/
+.section-container{
+    margin: 15px 20px;
+}
+
+.section-container h1{
+    text-align: center;
+}
+/*endregion*/
+
+/*
+* Header
+*/
+/*region HEADER*/
+header {
+    padding:1em;
+    background-color: #008833;
+    display: grid;
+    grid-template-columns: 1fr 2fr;
+    grid-template-areas:
+        "header-logo header-nav"
+        "search search";
+    grid-gap: 1em;
+}
+
+#header-logo {
+    grid-area: header-logo;
+    align-self:center;
+    justify-self: left;
+}
+
+#header-nav {
+    grid-area: header-nav;
+    align-self:center;
+    justify-self: right;
+}
+
+#header-nav ul {
+    list-style: none;
+}
+
+#header-nav ul > li{
+    display: inline;
+    margin: 0 10px;
+}
+
+.header-nav-element {
+
+}
+
+@media (min-width: 1440px) {
+    /*TODO - Large version needs a little TLC*/
+    header {
+        grid-template-columns: 1fr 2fr 1fr;
+        grid-template-areas:
+                "header-logo search header-nav"
+    }
+}
+/*endregion*/
+
+/*
+* SEARCH
+*/
+/*region SEARCH*/
+.search-wrapper {
+    grid-area: search;
+}
+
+.search-form {
+    display: grid;
+    grid-template-columns: 7fr 1fr;
+    background-color: white;
+    padding: 1em;
+
+}
+
+.search-form input[type=text] {
+    box-sizing : border-box;
+    width: 100%;
+    border:0;
+}
+
+.search-form input[type=text]:focus {
+    outline: none;
+}
+
+.search-result-container{
+    position: relative;
+    width: 100%;
+    background-color: white;
+}
+
+.search-result-wrapper{
+    position: absolute;
+    width: 100%;
+    background-color: white;
+    z-index: 1;
+    border: 1px solid black;
+}
+
+.search-result-wrapper ul{
+    list-style-type: none;
+    padding:0;
+}
+
+.search-result-wrapper ul li{
+    border-bottom: 2px solid lightgray;
+    padding: 10px;
+}
+
+.search-result-wrapper p{
+    text-align: center;
+}
+/*endregion*/
+
+/*
+* CATEGORIES
+*/
+/*region CATEGORIES*/
+.categories-wrapper {
+    display:grid;
+    grid-gap: 0em;
+    background-color: white;
+
+}
+
+.categories-element {
+    padding-top: .75em;
+    padding-bottom: .75em;
+    margin: 10px;
+    border-bottom: 2px solid lightgray;
+}
+
+.categories-element:last-child{
+    border-bottom: none;
+}
+
+.categories-element-all {
+    margin-top: 1em;
+}
+
+.categories-element h2,h3 {
+    display: inline;
+    padding-left: 10px;
+    margin:0;
+}
+
+.categories-element h3{
+    font-weight: normal;
+}
+
+.categories-element-arrow {
+    float: right;
+    width: 24px;
+    padding-top: 6px;
+}
+
+@media only screen and (min-width: 768px)  {
+    .categories-wrapper {
+        grid-template-columns: repeat(3,1fr);
+        grid-gap:0;
+    }
+    .categories-element {
+        text-align: center;
+        padding-left: 10px;
+        border-left: 1px solid lightgray;
+        border-right: 1px solid lightgray;
+        margin:0;
+    }
+
+    .categories-element:last-child{
+        border-bottom: 2px solid lightgray;
+    }
+    .categories-element-arrow {
+        display: none;
+    }
+    .categories-element-all{
+        grid-column: 1 / -1;
+        grid-row: 1;
+    }
+}
+/*endregion*/
+
+/*
+* FUNCTIONALITY CIRCLES
+*/
+/*region FUNCTIONALITY CIRCLES*/
+.functionality-circle-container{
+    display: grid;
+    grid-template-columns: repeat(3,1fr);
+}
+
+.functionality-circle-wrapper{
+    text-align: center;
+}
+
+.functionality-circle-wrapper span{
+    display: block;
+    padding-top: 10px;
+}
+
+.functionality-circle{
+    margin: 0 auto;
+    text-align: center;
+    background-color: white;
+    border-radius: 50%;
+    height: 80px;
+    width: 80px;
+}
+
+.functionality-circle img{
+    margin-top:30px;
+}
+/*endregion*/
+
+/*
+* MARKETS
+*/
+/*region MARKETS*/
+.markets-container{
+    display: grid;
+    grid-gap:1em;
+    grid-template-columns: repeat(6,auto);
+}
+
+.markets-container a{
+    text-decoration: none;
+    color: black;
+}
+
+.markets-container a:visited{
+    color: black;
+}
+
+.markets-wrapper{
+    background-color: white;
+    text-align: center;
+    height: auto;
+    min-height: 130px;
+}
+
+.markets-wrapper img{
+    /*width: 100px;*/
+    width: 100%;
+    height: auto;
+    min-height: 80px;
+}
+
+
+.markets-wrapper p{
+    font-size: 11px;
+    padding: 10px;
+    margin: 0px;
+}
+/*endregion*/
+
+/*
+* FRONT PAGE INFO ELEMENTS
+* TODO - This needs a new name.  I want the elements to be on the same grid layout to control where elements show up but they are not really relevant.
+*/
+/*region FRONT PAGE INFO ELEMENTS*/
+.front-page-info-elements-container{
+    display: grid;
+    grid-template-columns: auto;
+    grid-template-areas:
+            "deals deals"
+            "plus-member plus-member"
+            "recent recent";
+}
+
+@media only screen and (min-width: 768px){
+    .front-page-info-elements-container{
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        grid-template-areas:
+                "plus-member plus-member"
+                "deals recent";
+    }
+}
+
+.front-page-info-element-deal-wrapper{
+    grid-area: deals;
+    max-height: 270px;
+    overflow: hidden;
+    background-image: url('img/panel/deal.png');
+    background-repeat:no-repeat;
+    background-size:cover;
+    background-position:center;
+}
+
+.front-page-info-element-member-wrapper{
+    grid-area: plus-member;
+    display: grid;
+    grid-template-columns: auto;
+    justify-items: center;
+    padding: 2em 0;
+    background-color: white;
+}
+
+@media only screen and (min-width: 768px){
+    .front-page-info-element-member-wrapper{
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        max-height: 230px;
+    }
+}
+
+.front-page-info-element-member-copy{
+    text-align: center;
+}
+
+.front-page-info-element-member-copy h2{
+    margin-top: 10px;
+    margin-bottom: 0px;
+}
+
+.front-page-info-element-member-copy h3{
+    margin-top:2px;
+}
+
+.front-page-info-element-member-copy span{
+    color: green;
+}
+
+.front-page-info-element-member-copy a{
+}
+
+.front-page-info-element-recent-wrapper {
+    background-color: white;
+    padding:20px;
+    grid-area: recent;
+    display: grid;
+    grid-template-columns: repeat(3,1fr);
+    font-size: 24px;
+    text-align: right;
+    color:green;
+    max-height: 230px;
+    overflow: hidden;
+}
+
+.front-page-info-element-recent-wrapper img {
+    justify-self: center;
+}
+
+.recent-title{
+    color: #000;
+    text-align: left;
+    grid-column: 1 / 3;
+    margin-bottom: 20px;
+}
+
+.front-page-info-element-squares-container{
+    display: grid;
+    grid-gap:1em;
+    grid-template-columns: 1fr 1fr;
+}
+
+@media only screen and (min-width: 768px){
+    .front-page-info-element-squares-container {
+        grid-template-columns: repeat(4,1fr);
+    }
+}
+
+.front-page-info-element-square-wrapper {
+    margin: 0 auto;
+    padding: 10px;
+    background-color: white;
+    width: 100px;
+    height: 150px;
+}
+
+@media only screen and (min-width: 768px) {
+    .front-page-info-element-square-wrapper {
+    }
+}
+
+.front-page-info-element-square{
+    text-align: center;
+    font-size: 14px;
+}
+
+.front-page-info-element-app-container{
+background-color: black;
+}
+
+.front-page-info-element-app-image{
+    background: url("img/panel/app-get-banner.png") no-repeat -478px;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+    height: 150px;
+    width: auto;
+    background-color: black;
+}
+
+@media (min-width:420px) {
+    /*The background is wonky.. reset position attribute after 450px*/
+    .front-page-info-element-app-image{
+        background: url("img/panel/app-get-banner.png") no-repeat -300px;
+        -webkit-background-size: cover;
+        -moz-background-size: cover;
+        -o-background-size: cover;
+        background-size: cover;
+    }
+}
+
+@media (min-width:768px) {
+    .front-page-info-element-app-image{
+        background: url("img/panel/app-get-banner.png") no-repeat;
+        -webkit-background-size: cover;
+        -moz-background-size: cover;
+        -o-background-size: cover;
+        background-size: cover;
+    }
+}
+
+.front-page-info-element-app-copy{
+    /*height: 40px;*/
+    text-align: center;
+    padding: 10px;
+    background-color: white;
+}
+/*endregion*/
+
+
+/*
+* FOOTER
+*/
+/*region FOOTER*/
+footer{
+    background-color: #666666;
+    color:white;
+    text-align: center;
+    padding: 20px;
+    /*height: 300px;*/
+}
+
+footer a{
+    color:white;
+    text-decoration: none;
+}
+
+footer a:visited{
+    color:white;
+}
+
+footer h2{
+    margin-bottom: 0px;
+}
+
+.footer-phone-time{
+    margin:0px;
+    color: #d3d3d3;
+}
+
+.footer-nav{
+    margin-top: 20px;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    justify-content: space-evenly;
+}
+/*endregion*/
+
+/*
+* ICONS
+* TODO - SVG Icons please.
+*/
+/*region ICONS*/
+.icon {
+
+}
+
+.icon-white-search {
+
+}
+/*endregion*/
+
+/*
+* BUTTONS
+*/
+/*region BUTTONS*/
+.button-unstyled {
+    border:0;
+    background: none;
+    display: inline;
+    outline: none;
+    -webkit-border-radius: 0;
+    -moz-border-radius: 0;
+    border-radius: 0;
+}
+
+.button-oval-link{
+    text-decoration: none;
+    background-color: lightgray;
+    color: black;
+    padding: 18px;
+    border-radius: 30px;
+    font-size: 20px;
+}
+
+.button-oval-link span{
+}
+
+.button-icon{
+    margin-right:1em;
+    margin-left:1em;
+}
+/*endregion*/
+
+/*
+* UTILITY
+*/
+/*region UTILITY*/
+.drop-shadow{
+    filter: drop-shadow(0px 1px 1px grey);
+}
+
+.img-responsive{
+    width: 100%;
+    height: auto;
+}
+
+.loader {
+    border: 16px solid #f3f3f3;
+    border-top: 16px solid #3498db;
+    border-radius: 50%;
+    width: 60px;
+    height: 60px;
+    animation: spin 2s linear infinite;
+    margin:0 auto;
+}
+
+@keyframes spin {
+    0% { transform: rotate(0deg); }
+    100% { transform: rotate(360deg); }
+}
+
+/*Show only on screens less than 768px;*/
+@media only screen and (min-width:768px) {
+    .show-phone{
+        display: none;
+    }
+
+}
+
+@media only screen and (max-width:767px) {
+    .show-tablet{
+        display: none;
+    }
+}
+/*endregion*/
+
+
+
